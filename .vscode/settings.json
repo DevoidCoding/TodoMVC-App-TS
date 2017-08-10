@@ -6,5 +6,6 @@
     },
     "emmet.syntaxProfiles": {
         "vue-html": "html"
-    }
+    },
+    "typescriptHero.codeOutline.enabled": true
 }

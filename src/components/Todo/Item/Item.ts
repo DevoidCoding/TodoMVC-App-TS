@@ -2,8 +2,8 @@ import View from '!view!./Item.html?style=./Item.styl'
 import Vue from 'vue'
 import { Component, Prop } from 'vue-property-decorator'
 
-import { Focus } from '../../../directives/Focus'
 import { Todo } from '../../../store/model/todo.model'
+import { Focus } from '../../../directives/Focus'
 import { TodoAction, TodoStore } from '../../../store/todo'
 import TodoTextInput from '../TextInput/TextInput'
 

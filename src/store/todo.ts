@@ -1,11 +1,12 @@
-import { namespace, State, Action, Mutation } from 'vuex-class'
+import { Action, Mutation, State, namespace } from 'vuex-class'
+
 import {
-    VuexStore,
     VuexAction,
+    VuexModule,
     VuexMutation,
-    VuexModule
+    VuexStore
 } from '../lib/utils/vuex'
-import { Todo, FilterEnum } from './model/todo.model'
+import { FilterEnum, Todo } from './model/todo.model'
 
 export const TodoState = namespace('todo', State)
 export const TodoAction = namespace('todo', Action)

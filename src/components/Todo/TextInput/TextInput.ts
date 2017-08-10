@@ -1,7 +1,6 @@
-import { TodoAction, TodoStore } from '../../../store/todo'
-import Vue from 'vue'
-import { Component, Prop, Inject } from 'vue-property-decorator'
 import View from '!view!./TextInput.html?style=./TextInput.styl'
+import Vue from 'vue'
+import { Component, Prop } from 'vue-property-decorator'
 
 @View
 @Component

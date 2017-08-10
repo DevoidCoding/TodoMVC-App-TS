@@ -1,14 +1,15 @@
 import {
-    VuexStore,
-    VuexModule,
     VuexAction,
-    VuexMutation
+    VuexModule,
+    VuexMutation,
+    VuexStore
 } from '../lib/utils/vuex'
 import {
-    TodoStore,
+    Actions as TodoActions,
     Mutations as TodoMutations,
-    Actions as TodoActions
+    TodoStore
 } from './todo'
+
 export type Actions = TodoMutations & {}
 
 export type Mutations = TodoActions & {}

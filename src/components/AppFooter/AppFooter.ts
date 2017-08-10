@@ -1,8 +1,8 @@
+import View from '!view!./AppFooter.html?style=./AppFooter.styl'
+import { FilterEnum } from 'store/model/todo.model'
+import { TodoAction, TodoMutation, TodoState, TodoStore } from 'store/todo'
 import Vue from 'vue'
 import { Component } from 'vue-property-decorator'
-import View from '!view!./AppFooter.html?style=./AppFooter.styl'
-import { TodoState, TodoStore, TodoAction, TodoMutation } from 'store/todo'
-import { FilterEnum } from 'store/model/todo.model'
 
 @View
 @Component

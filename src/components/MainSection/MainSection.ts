@@ -1,15 +1,16 @@
-import TodoItem from '../Todo/Item/Item'
-import Vue from 'vue'
-import { Component, Prop } from 'vue-property-decorator'
 import View from '!view!./MainSection.html?style=./MainSection.styl'
-import {
-    TodoState,
-    TodoAction,
-    TodoMutation,
-    TodoStore
-} from '../../store/todo'
 import AppFooter from 'components/AppFooter/AppFooter'
 import { Todo } from 'store/model/todo.model'
+import Vue from 'vue'
+import { Component, Prop } from 'vue-property-decorator'
+
+import {
+    TodoAction,
+    TodoMutation,
+    TodoState,
+    TodoStore
+} from '../../store/todo'
+import TodoItem from '../Todo/Item/Item'
 
 @View
 @Component({
