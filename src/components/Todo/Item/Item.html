@@ -1,0 +1,6 @@
+<TodoTextInput v-if="editing" v-model="todo.text" :blur="onBlur" />
+<li v-else :class="{completed: todo.done}">
+    <input class="toggle" type="checkbox" v-model="todo.done" />
+    <label @dblclick="editing=true">{{todo.text}}</label>
+    <button class="destroy" @click="removeTodo(todo)" />
+</li>

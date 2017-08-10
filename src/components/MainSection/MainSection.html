@@ -1,0 +1,7 @@
+<section :class="{main: true, hidden: !todos.length}">
+    <input class="toggle-all" v-show="filter === 'all'" type="checkbox" @checked.prevent v-model="allDone"/><label />
+    <ul class="todo-list">
+        <TodoItem v-for="todo in filteredTodos" :key="todo.id" :todo="todo" />
+    </ul>
+    <AppFooter />
+</section>

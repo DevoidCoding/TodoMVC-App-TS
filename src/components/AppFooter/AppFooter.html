@@ -1,0 +1,16 @@
+<footer class="footer">
+    <span class="todo-count">
+        <strong>{{remainingTodos || 'No'}}</strong> item{{remainingTodos > 1 ? 's' : ''}} left
+    </span>
+    <ul class="filters">
+        <li v-for="f in filters" :key="f">
+            <a :class="{selected: f === filter}"
+                style="cursor: pointer; text-transform: capitalize"
+                @click="changeFilter(f)">
+                {{ f }}
+            </a>
+        </li>
+    </ul>
+    <button v-show="completedTodos" class="clear-completed"
+            @click="clearCompletedTodos">Clear completed</button>
+</footer>
